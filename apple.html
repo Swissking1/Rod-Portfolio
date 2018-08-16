@@ -98,9 +98,21 @@ img {
                   <h1 style="margin:40px 0px">Apple Mac Diagnostics Internship</h1>
                 <font size "1">summer '18</font>
                     
-                  <p class="lead"> <font color=#000000> technical skills: </font> <font color=#7F7E7E> custom Linux distro development </font><br>
-                  <font color=#000000>soft skills: </font><font color=#7F7E7E>cross-functional interaction with external teams</font></p>
+                  <p class="lead"> <font color=#000000> technical skills: </font> <font color=#7F7E7E> custom Linux distro development, EFI, Lua, C </font><br>
+                  <font color=#000000>soft skills: </font><font color=#7F7E7E>cross-functional interaction with internal teams and external vendors</font></p>
+				  <p>
+				  	In the summer of 2018, I interned with Apple on the Mac Diagnostics team working on a new diagnostics platform. One of the problems a lot of internal teams face within Apple is a lack of data about our hardware early in the build process. I came into the team to help solve this by developing in a new Linux-based diagnostics environment.
 
+					<br> <br>
+
+					Inside every Mac, there are a lot of 3rd party components; with each of these components comes a 3rd-party driver that had to work with macOS. This presented a few problems - First, almost all of these componies develop their hardware and the drivers to support them in Linux. Several months later, they then port the tools to macOS/Windows. Even worse, integrating the driver into a stable version of macOS adds more delays between the time that hardware is created and the time we're able to get data and effectively interact with it. To solve this problem, my team developed a platform that allows us to use the vendor's tools and drivers to easily analyze our hardware. 
+					<br> <br>
+
+					 I set out to create test frameworks that would give us as much benefit out of this environment as possible. First, I created a tool to trigger system stress loads and monitor the response. A lot of the teams, like Thermal Design and System EE, care about generating high stress loads and seeing how the system reponds. With my tool, I was able to generate these loads and collect relevant data so these teams could iterate on their designs. By creating this I was able to give these teams critical data ahead of expectations. Creating this tool required developing test sequences in Lua in an EFI environment in addition to writing scripts in Bash and C to stress the system. Lastly, I worked with the 3rd-party drivers to provide a functional interface within sysfs to get data early on in the build.
+					 
+					 <br> <br>
+					 The second tool I created provided power metrics on our systems that monitored CPU activity and power consumption to verify our systems' power management capabilities. This involved writing a C program combined with Lua and Bash scripts that would interact with sysfs information and report it to the user. Additionally, I had to tune our environment to reach a low-power idle target that the design team desired.
+				  </p>
 
                   </div>
 
