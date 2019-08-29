@@ -95,14 +95,16 @@ img {
         <div class="column">
           <br> <br> <br>
               <div class="header">
-                  <h1 style="margin:40px 0px">Battery Managemnt System Head Unit </h1>
-                <font size "1"> fall '18 </font>
+                  <h1 style="margin:40px 0px">Battery Management System Head Unit </h1>
+                <font size "1"> fall '18-spring '19 </font>
                     
                   <p class="lead"> <font color=#000000> technical skills: </font> <font color=#7F7E7E> Altium, HV electronics</font><br>
                   <font color=#000000>soft skills: </font><font color=#7F7E7E>iterative design review, team coordination </font></p>
 
-                <p > 
-				This year I'm working on the BMS Head unit for MIT FSAE. It's main job is to communicate with the segment boards to relay thermistor readings and cell voltages to the rest of the car and generate a fault signal if anything goes wrong (e.g. battery pack getting too hot).
+                <p> 
+				For the 2019 FSAE car I worked on the BMS head unit. Its role is to monitor all cell voltages and thermistor temperatures when powered. After receiving this information through an isolated communication protocol (LT's ISOSPI), it reports the minimum cell voltage and maximum thermistor temperature over CAN. Additionally there is an SD card on the chip to log every cell voltage and thermistor, enabling a data based thermal design to improve the battery's performance. 
+				</p><p>
+				In addition to this main funtion the BMS head unit interfaces with other high voltage electronics like the contactors, monitors battery coolant flow rate, and the temperatures of various HV electronics.
 				</p>
 
                   </div>
