@@ -1,0 +1,13 @@
+---
+layout: post
+title:  "Custom FSAE Traction Inverter"
+date:   2020-06-01 09:00:00 -0500
+description: "Designed a 3 phase inverter woot"
+categories: jekyll update
+img: "/pictures/InverterTopDown.jpg"
+---
+<center>
+<i>Schematic of 3-phase 2-level inverter</i>
+<p><img src="/pictures/IGBT_Inverter.png"></p>
+</center>
+In the fall of 2018 I took 6.332, an extension of 6.334, Graduate Power Electronics. This class, like .334, had a final project however it was completely open-ended, the project just had to be related to power electronics. I chose to write the firmware for a three phase motor controller using field oriented control (FOC). Being on FSAE, I was always interested in how our off-the-shelf motor controllers worked and wanted to see if I could create my own. The project ended up being pretty time consuming with lots of bugs to chase out but eventually I got the motor to spin. I wrote up a report on FOC and my experiences and you can read it [here](/documents/6.332_Report.pdf). The motor used was a 650 kv propdrive motor, the microcontroller was an STM32F413 (the same used on FSAE), and the power electronics were embedded on a nucleo <a href="http://st.com/en/evaluation-tools/p-nucleo-ihm001.html" target="_blank"><u>shield</u></a>
